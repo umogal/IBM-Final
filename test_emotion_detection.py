@@ -26,6 +26,10 @@ class TestEmotionDetection(unittest.TestCase):
         fear_text = 'I am really afraid that this will happen'
         result_fear = emotion_detector(fear_text)
         self.assertEqual(result_fear['dominant_emotion'], 'fear')
-
+    # invalid input extended test
+    def test_invalid_input(self):
+       """Verifies that blank input returns None for the dominant emotion."""
+        result = emotion_detector('')
+        self.assertIsNone(result['dominant_emotion'])
 if __name__ == '__main__':
     unittest.main()
