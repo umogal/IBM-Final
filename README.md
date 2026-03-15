@@ -23,12 +23,7 @@ pip install flask
 
 ### Installation
 
-Clone the repository to your local machine:
-
-```bash
-git clone https://github.com/ehernandezvilla/IBM-finalia
-cd IBM-finalia
-```
+Clone the repository to your local machine
 
 ### Running the Application
 
